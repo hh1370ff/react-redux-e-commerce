@@ -54,6 +54,7 @@ const CurrencyMenu = () => {
         {CURRENCIES.map((currency, index) => (
           <MenuItem
             dense
+            key={index}
             divider={index !== CURRENCIES.length - 1 ? true : false}
             onClick={() => handleCurrency(currency)}
             sx={{

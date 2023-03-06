@@ -42,13 +42,30 @@ const MobileSearch = () => {
             justifyContent: "space-around",
           }}
         >
-          <TextField sx={{ flex: 1 }} variant="standard" />
-          <Search sx={{ cursor: "hover" }} />
-          <CloseIcon
-            sx={{ cursor: "hover" }}
-            onClick={() => setOpenSearch((pre) => !pre)}
+          <TextField
+            sx={{ flex: 1, "& input": { color: shades.primary["500"] } }}
+            variant="standard"
+          />
+
+          <Search
+            sx={{
+              cursor: "hover",
+              fontSize: "2rem",
+              color: shades.primary["500"],
+            }}
           />
         </Box>
+        <CloseIcon
+          sx={{
+            cursor: "hover",
+            position: "fixed",
+            top: 10,
+            right: 10,
+            fontSize: "2rem",
+            color: shades.primary["500"],
+          }}
+          onClick={() => setOpenSearch((pre) => !pre)}
+        />
       </Box>
     </Slide>
   );

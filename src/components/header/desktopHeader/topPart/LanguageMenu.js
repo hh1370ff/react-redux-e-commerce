@@ -60,7 +60,7 @@ const LanguageMenu = () => {
         {LANGUAGES.map((language, index) => (
           <Box>
             <MenuItem
-              key={language}
+              key={index}
               onClick={() => handleLanguage(language)}
               sx={{ height: ".75rem" }}
             >

@@ -17,7 +17,7 @@ const Icons = () => {
     <Box
       sx={{
         display: "flex",
-        gap: "0.1rem",
+        justifyContent: "space-between",
         width: "30%",
       }}
     >

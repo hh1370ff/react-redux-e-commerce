@@ -7,12 +7,14 @@ import { useTheme } from "@mui/material/styles";
 import MobileHeader from "../components/header/mobileHeader.js/MobileHeader";
 import { useMediaQuery } from "@mui/material";
 import MobileSearch from "./MobileSearch";
+import { backgroundColor } from "../theme/theme";
 const MainLayout = () => {
   const theme = useTheme();
   const downMd = useMediaQuery(theme.breakpoints.down("md"));
   return (
     <Box
       sx={{
+        backgroundColor: backgroundColor,
         display: "flex",
         flexDirection: "column",
         justifyContent: "space-between",

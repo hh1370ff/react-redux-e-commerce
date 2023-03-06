@@ -5,6 +5,8 @@ export const textColor = {
   white: "#FFFAFA",
 };
 
+export const backgroundColor = "#1c2331";
+
 export const shades = {
   primary: {
     100: "#d0d4db",

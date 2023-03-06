@@ -2,7 +2,7 @@ import { ThemeProvider } from "@mui/material/styles";
 import { darkTheme } from "./theme/theme";
 import { Routes, Route } from "react-router-dom";
 import MainLayout from "./layout/MainLayout";
-import Home from "./pages/Home";
+import Home from "./pages/home/Home";
 import { UiProvider } from "./uiContext/uiContext";
 function App() {
   return (

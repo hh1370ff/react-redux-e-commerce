@@ -47,7 +47,7 @@ const CurrencyMenu = () => {
         {CURRENCIES.map((currency, index) => (
           <Box>
             <MenuItem
-              key={currency}
+              key={index}
               onClick={() => handleCurrency(currency)}
               sx={{ height: ".75rem" }}
             >
